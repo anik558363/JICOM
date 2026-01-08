@@ -965,3 +965,94 @@ a {
     grid-template-columns: 1fr;
   }
 }
+/* ================= How It Works ================= */
+.howit-section{
+  padding: 80px 0;
+  background: rgba(255,255,255,.02);
+}
+.howit-card{
+  height: 100%;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.06);
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 14px 35px rgba(0,0,0,.06);
+}
+.howit-step{
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight: 800;
+  background: rgba(13,110,253,.12);
+  color: var(--c-primary);
+  margin-bottom: 14px;
+}
+.howit-card h5{ margin-bottom: 8px; }
+.howit-card p{ margin: 0; opacity: .88; }
+
+/* ================= Vessel Categories ================= */
+.categories-section{
+  padding: 70px 0;
+}
+.category-card{
+  display:flex;
+  gap: 12px;
+  align-items:center;
+  justify-content:flex-start;
+  width: 100%;
+  padding: 16px 18px;
+  border-radius: 16px;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.06);
+  text-decoration:none;
+  color: var(--c-dark);
+  box-shadow: 0 12px 28px rgba(0,0,0,.05);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.category-card i{
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background: rgba(13,110,253,.12);
+  color: var(--c-primary);
+}
+.category-card span{ font-weight: 700; }
+.category-card:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 16px 35px rgba(0,0,0,.08);
+}
+
+/* ================= Ship Detail Page ================= */
+.detail-hero{
+  padding: 120px 0 40px;
+  background: radial-gradient(1200px 600px at 20% 10%, rgba(13,110,253,.25), transparent 60%),
+              radial-gradient(1000px 500px at 90% 20%, rgba(25,135,84,.18), transparent 60%),
+              var(--c-dark);
+  color: #fff;
+}
+.detail-card{
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.06);
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 14px 35px rgba(0,0,0,.06);
+}
+.spec-table td, .spec-table th{ vertical-align: middle; }
+.spec-table th{ width: 34%; }
+.kv-badge{
+  display:inline-flex;
+  align-items:center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.14);
+  border: 1px solid rgba(255,255,255,.18);
+  margin-right: 8px;
+  margin-top: 10px;
+}
