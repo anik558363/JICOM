@@ -1,0 +1,214 @@
+/* =========================
+   SELLER PANEL (FULL CSS)
+   Paste into: assets/css/seller-account.css
+========================= */
+
+.seller-page {
+  margin-top: 45px;
+}
+
+/* Card */
+.acc-card {
+  background: #fff;
+  border: 1px solid rgba(15, 23, 42, .08);
+  border-radius: 18px;
+  box-shadow: 0 14px 40px rgba(2, 6, 23, .06);
+  overflow: hidden;
+}
+
+/* Sidebar user */
+.acc-user {
+  padding: 20px 18px 16px;
+  background: linear-gradient(180deg, #f7fafc, #ffffff);
+  border-bottom: 1px solid rgba(15, 23, 42, .08);
+  text-align: center;
+}
+
+.acc-avatar {
+  width: 58px;
+  height: 58px;
+  border-radius: 18px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(47, 125, 255, .12);
+  border: 1px solid rgba(47, 125, 255, .18);
+  color: rgba(15, 23, 42, .75);
+  font-size: 20px;
+}
+
+.acc-hello {
+  font-weight: 800;
+  color: rgba(15, 23, 42, .65);
+}
+
+.acc-name {
+  font-weight: 950;
+  font-size: 1.05rem;
+  margin-top: 2px;
+}
+
+/* Sidebar nav */
+.acc-nav {
+  padding: 10px;
+}
+
+.acc-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 12px;
+  border-radius: 14px;
+  text-decoration: none;
+  font-weight: 900;
+  color: rgba(15, 23, 42, .80);
+  border: 1px solid transparent;
+  transition: .15s ease;
+  margin-bottom: 6px;
+  background: #fff;
+}
+
+.acc-link i {
+  width: 18px;
+  text-align: center;
+  opacity: .9;
+}
+
+.acc-link:hover {
+  background: #f4f7ff;
+  border-color: rgba(47, 125, 255, .18);
+  color: #0f172a;
+}
+
+.acc-link.active {
+  background: #dffbf4;
+  border-color: rgba(16, 185, 129, .25);
+  color: #0f172a;
+}
+
+/* Right content */
+.acc-content {
+  padding: 18px;
+}
+
+.acc-muted {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.acc-pill-btn {
+  border-radius: 999px;
+}
+
+/* Thumb */
+.acc-thumb {
+  width: 72px;
+  height: 52px;
+  border-radius: 14px;
+  object-fit: cover;
+  display: block;
+  flex: 0 0 auto;
+  border: 1px solid rgba(15, 23, 42, .08);
+}
+
+/* =========================
+   TABLE FIX (IMPORTANT)
+========================= */
+
+/* Always allow horizontal scroll on small screens */
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Make sure table doesn't squeeze & break */
+.acc-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  min-width: 760px;
+  /* key: forces horizontal scroll */
+  table-layout: auto;
+  /* let browser size columns naturally */
+}
+
+/* Head + cell styling */
+.acc-table thead th {
+  font-weight: 950;
+  color: rgba(15, 23, 42, .72);
+  background: #fbfcff;
+  border-bottom: 1px solid rgba(15, 23, 42, .08);
+  white-space: nowrap;
+  /* keep header one line */
+}
+
+.acc-table td {
+  font-weight: 850;
+  color: rgba(15, 23, 42, .86);
+  white-space: nowrap;
+  /* prevent stacking */
+  vertical-align: middle;
+}
+
+.acc-table th,
+.acc-table td {
+  padding: 14px 14px;
+  border-bottom: 1px solid rgba(15, 23, 42, .06);
+}
+
+/* Column widths (optional but helpful) */
+.acc-col-id {
+  width: 70px;
+}
+
+.acc-col-status {
+  width: 140px;
+}
+
+.acc-col-year {
+  width: 110px;
+}
+
+.acc-col-action {
+  width: 170px;
+}
+
+/* Buttons inside action cell */
+.acc-table .btn {
+  border-radius: 12px;
+}
+
+/* =========================
+   MOBILE TUNING
+========================= */
+@media (max-width: 576px) {
+
+  /* slightly smaller thumb on mobile */
+  .acc-thumb {
+    width: 56px;
+    height: 44px;
+    border-radius: 12px;
+  }
+
+  /* reduce padding inside content */
+  .acc-content {
+    padding: 14px;
+  }
+
+  /* little smaller buttons */
+  .acc-table .btn {
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+
+  /* You can reduce min-width if you want less scroll */
+  .acc-table {
+    min-width: 680px;
+  }
+
+
+  .seller-page {
+    margin-top: 30px;
+  }
+}

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Seller Panel | JICOM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/seller-account.css" />
+</head>
+
+<body>
+    <!-- ================= Navbar ================= -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark custom-navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+
+                <img width="100" height="50" src="assets/image/logo.png" alt="">
+
+            </a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ships.html">Ships</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-lg-2">
+                        <a class="btn btn-cta btn-sm px-4" href="seller-panel.html">Seller Panel</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================= Main Section ================= -->
+    <main class="services-section seller-page">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- ===== Sidebar ===== -->
+                <aside class="col-lg-3">
+                    <div class="acc-card">
+                        <div class="acc-user">
+                            <div class="acc-avatar">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div class="mt-2">
+                                <div class="acc-hello">Hello</div>
+                                <div class="acc-name">Anik Mondol</div>
+                            </div>
+                        </div>
+
+                        <nav class="acc-nav">
+                            <a class="acc-link active" href="seller-panel.html">
+                                <i class="fa-regular fa-user"></i> My Panel
+                            </a>
+
+                            <a class="acc-link" href="seller-orders.html">
+                                <i class="fa-solid fa-box-open"></i> My Orders
+                            </a>
+
+                            <a class="acc-link" href="seller-ships.html">
+                                <i class="fa-solid fa-ship"></i> My Ships
+                            </a>
+
+                            <a class="acc-link" href="#">
+                                <i class="fa-solid fa-right-from-bracket"></i> Logout
+                            </a>
+                        </nav>
+                    </div>
+                </aside>
+
+                <!-- ===== Right Content ===== -->
+                <section class="col-lg-9">
+                    <div class="acc-card acc-content">
+
+                        <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3">
+                            <div>
+                                <h5 class="m-0 fw-bold">Latest Ships Added</h5>
+                                <div class="mini-muted acc-muted">
+                                    Here are your most recent 10 ship listings.
+                                </div>
+                            </div>
+
+                            <a href="seller-panel.html" class="btn btn-primary fw-bold px-4 acc-pill-btn">
+                                <i class="fa-solid fa-circle-plus me-2"></i> Add Ship
+                            </a>
+                        </div>
+
+                        <div class="table-responsive">
+                            <table class="table align-middle acc-table mb-0">
+                                <thead>
+                                    <tr>
+                                        <th class="acc-col-id">#</th>
+                                        <th>Ship</th>
+                                        <th class="acc-col-status">Status</th>
+                                        <th class="acc-col-year">Year</th>
+                                        <th class="acc-col-action">Action</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td class="fw-bold">01</td>
+                                        <td>
+                                            <div class="d-flex align-items-center gap-3">
+                                                <img src="https://images.pexels.com/photos/1554646/pexels-photo-1554646.jpeg?auto=compress&cs=tinysrgb&w=220"
+                                                    class="acc-thumb" alt="Bulk Carrier">
+                                                <div>
+                                                    <div class="fw-bold">Bulk Carrier — 58,000 DWT</div>
+                                                    <div class="mini-muted acc-muted">ABS • Flag: Panama
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td><span class="badge bg-success-subtle text-success fw-bold">On Service</span>
+                                        </td>
+                                        <td class="fw-bold">2015</td>
+                                        <td>
+                                            <a href="bulk-carrier-58000.html"
+                                                class="btn btn-outline-primary btn-sm fw-bold">
+                                                View
+                                            </a>
+                                            <a href="#" class="btn btn-outline-secondary btn-sm fw-bold">
+                                                Edit
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="fw-bold">02</td>
+                                        <td>
+                                            <div class="d-flex align-items-center gap-3">
+                                                <img src="https://images.pexels.com/photos/132037/pexels-photo-132037.jpeg?auto=compress&cs=tinysrgb&w=220"
+                                                    class="acc-thumb" alt="Container Vessel">
+                                                <div>
+                                                    <div class="fw-bold">Container Vessel — 2,700 TEU</div>
+                                                    <div class="mini-muted acc-muted">Newbuild • LNG Ready
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td><span class="badge bg-primary-subtle text-primary fw-bold">Newbuild</span>
+                                        </td>
+                                        <td class="fw-bold">2026</td>
+                                        <td>
+                                            <a href="bulk-carrier-58000.html"
+                                                class="btn btn-outline-primary btn-sm fw-bold">View</a>
+                                            <a href="#" class="btn btn-outline-secondary btn-sm fw-bold">Edit</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="fw-bold">03</td>
+                                        <td>
+                                            <div class="d-flex align-items-center gap-3">
+                                                <img src="https://images.pexels.com/photos/753331/pexels-photo-753331.jpeg?auto=compress&cs=tinysrgb&w=220"
+                                                    class="acc-thumb" alt="MR Tanker">
+                                                <div>
+                                                    <div class="fw-bold">MR Product Tanker — 49,900 DWT</div>
+                                                    <div class="mini-muted acc-muted">ABS • Korea Built</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td><span class="badge bg-success-subtle text-success fw-bold">On Service</span>
+                                        </td>
+                                        <td class="fw-bold">2013</td>
+                                        <td>
+                                            <a href="bulk-carrier-58000.html"
+                                                class="btn btn-outline-primary btn-sm fw-bold">View</a>
+                                            <a href="#" class="btn btn-outline-secondary btn-sm fw-bold">Edit</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="fw-bold">04</td>
+                                        <td>
+                                            <div class="d-flex align-items-center gap-3">
+                                                <img src="https://images.pexels.com/photos/262353/pexels-photo-262353.jpeg?auto=compress&cs=tinysrgb&w=220"
+                                                    class="acc-thumb" alt="General Cargo">
+                                                <div>
+                                                    <div class="fw-bold">General Cargo — 12,500 DWT</div>
+                                                    <div class="mini-muted acc-muted">BV Class • Europe Built
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td><span class="badge bg-success-subtle text-success fw-bold">On Service</span>
+                                        </td>
+                                        <td class="fw-bold">2012</td>
+                                        <td>
+                                            <a href="#" class="btn btn-outline-primary btn-sm fw-bold">View</a>
+                                            <a href="#" class="btn btn-outline-secondary btn-sm fw-bold">Edit</a>
+                                        </td>
+                                    </tr>
+
+
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- ================= Footer ================= -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row g-4 footer-top">
+
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="footer-brand">JICOM</h4>
+                    <p class="footer-text">
+                        JICOM is a trusted global ship brokerage connecting buyers and sellers worldwide with verified
+                        vessels,
+                        transparent processes, and professional advisory support.
+                    </p>
+
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="ships.html">Ships</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Our Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Newbuild Ships</a></li>
+                        <li><a href="services.html">On-Service Ships</a></li>
+                        <li><a href="services.html">Ship Sale & Purchase</a></li>
+                        <li><a href="services.html">Market Advisory</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Contact</h5>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-envelope"></i> info@jicomglobal.com</li>
+                        <li><i class="fas fa-phone"></i> +123 456 7890</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Global Port City</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 <strong>JICOM</strong>. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
