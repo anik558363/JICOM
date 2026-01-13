@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Seller Panel | JICOM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="shortcut icon" href="assets/image/logo.png" type="image/x-icon">
+
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/seller-account.css" />
+</head>
+
+<body>
+    <!-- ================= Navbar ================= -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark custom-navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+
+                <img width="80" height="40" src="assets/image/logo.png" alt="">
+
+            </a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ships.html">Ships</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-lg-2">
+                        <a class="btn btn-cta btn-sm px-4" href="seller-panel.html">Seller Panel</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================= Main Section ================= -->
+    <main class="services-section seller-page">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- ===== Sidebar ===== -->
+                <aside class="col-lg-3">
+                    <div class="acc-card">
+                        <div class="acc-user">
+                            <div class="acc-avatar">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div class="mt-2">
+                                <div class="acc-hello">Hello</div>
+                                <div class="acc-name">Anik Mondol</div>
+                            </div>
+                        </div>
+
+                        <nav class="acc-nav">
+                            <a class="acc-link active" href="seller-panel.html">
+                                <i class="fa-regular fa-user"></i> My Panel
+                            </a>
+
+                            <!-- <a class="acc-link" href="seller-orders.html">
+                                <i class="fa-solid fa-box-open"></i> My Orders
+                            </a> -->
+
+                            <a class="acc-link" href="seller-ships.html">
+                                <i class="fa-solid fa-ship"></i> My Ships
+                            </a>
+
+                            <a class="acc-link" href="#">
+                                <i class="fa-solid fa-right-from-bracket"></i> Logout
+                            </a>
+                        </nav>
+                    </div>
+                </aside>
+
+                <!-- ===== Right Content ===== -->
+                <section class="col-lg-9">
+                    <div class="acc-card acc-content">
+
+                        <!-- Header -->
+                        <div
+                            class="d-flex align-items-start align-items-sm-center justify-content-between flex-wrap gap-2 mb-3">
+                            <div>
+                                <h5 class="fw-bold m-0">Add New Ship</h5>
+                                <div class="acc-muted">Fill the form and publish your ship listing (static UI)</div>
+                            </div>
+
+                            <div class="d-flex gap-2 flex-wrap">
+                                <a href="seller-ships.html" class="btn btn-outline-primary fw-bold px-4"
+                                    style="border-radius:999px;">
+                                    <i class="fa-solid fa-arrow-left me-2"></i> Back
+                                </a>
+                                <button type="button" class="btn btn-primary fw-bold px-4" style="border-radius:999px;">
+                                    <i class="fa-solid fa-floppy-disk me-2"></i> Save Draft
+                                </button>
+                            </div>
+                        </div>
+
+                        <form>
+                            <div class="row g-3">
+
+                                <!-- Left -->
+                                <div class="col-lg-8">
+                                    <!-- Basic info -->
+                                    <div class="form-section mb-3">
+                                        <div class="form-section-title">
+                                            <i class="fa-solid fa-circle-info"></i> Basic Information
+                                        </div>
+
+                                        <div class="row g-3">
+                                            <div class="col-md-7">
+                                                <label class="form-label fw-bold">Ship Title</label>
+                                                <input type="text" class="form-control acc-input"
+                                                    placeholder="e.g. Bulk Carrier — 58,000 DWT">
+                                            </div>
+
+                                            <div class="col-md-5">
+                                                <label class="form-label fw-bold">Category</label>
+                                                <select class="form-select acc-input">
+                                                    <option value="">Select</option>
+                                                    <option>Bulk Carrier</option>
+                                                    <option>Tanker</option>
+                                                    <option>Container</option>
+                                                    <option>Specialized</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <label class="form-label fw-bold">Status</label>
+                                                <select class="form-select acc-input">
+                                                    <option>On Service</option>
+                                                    <option>Newbuild</option>
+                                                    <option>Sold</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <label class="form-label fw-bold">Built Year</label>
+                                                <input type="number" class="form-control acc-input" placeholder="2015">
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <label class="form-label fw-bold">Shipyard / Country</label>
+                                                <input type="text" class="form-control acc-input"
+                                                    placeholder="Japan / Korea / China">
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <label class="form-label fw-bold">Flag</label>
+                                                <input type="text" class="form-control acc-input"
+                                                    placeholder="Panama / Liberia / etc.">
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <label class="form-label fw-bold">Class</label>
+                                                <input type="text" class="form-control acc-input"
+                                                    placeholder="ABS / BV / DNV / etc.">
+                                            </div>
+
+                                            <div class="col-12">
+                                                <label class="form-label fw-bold">Short Description</label>
+                                                <textarea class="form-control acc-input" rows="4"
+                                                    placeholder="Write short summary about the vessel..."></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Specs -->
+                                    <div class="form-section mb-3">
+                                        <div class="form-section-title">
+                                            <i class="fa-solid fa-list-check"></i> Key Specifications
+                                        </div>
+
+                                        <div class="row g-3">
+                                            <div class="col-md-4">
+                                                <label class="form-label fw-bold">DWT</label>
+                                                <input type="text" class="form-control acc-input" placeholder="58,000">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label class="form-label fw-bold">LOA (m)</label>
+                                                <input type="text" class="form-control acc-input" placeholder="190">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label class="form-label fw-bold">Beam (m)</label>
+                                                <input type="text" class="form-control acc-input" placeholder="32.2">
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <label class="form-label fw-bold">Draft (m)</label>
+                                                <input type="text" class="form-control acc-input" placeholder="12.4">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label class="form-label fw-bold">Holds</label>
+                                                <input type="text" class="form-control acc-input" placeholder="5">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label class="form-label fw-bold">Grain (m³)</label>
+                                                <input type="text" class="form-control acc-input" placeholder="72,500">
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <label class="form-label fw-bold">Engine</label>
+                                                <input type="text" class="form-control acc-input"
+                                                    placeholder="MAN B&W / etc.">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label fw-bold">Speed (knots)</label>
+                                                <input type="text" class="form-control acc-input" placeholder="12 - 14">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Commercial -->
+                                    <div class="form-section">
+                                        <div class="form-section-title">
+                                            <i class="fa-solid fa-handshake"></i> Commercial / Contact
+                                        </div>
+
+                                        <div class="row g-3">
+                                            <div class="col-md-6">
+                                                <label class="form-label fw-bold">Indicative Price</label>
+                                                <input type="text" class="form-control acc-input"
+                                                    placeholder="e.g. 12,000,000 USD (optional)">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label fw-bold">Availability</label>
+                                                <input type="text" class="form-control acc-input"
+                                                    placeholder="Prompt / Feb 2026 / etc.">
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <label class="form-label fw-bold">Your Email</label>
+                                                <input type="email" class="form-control acc-input"
+                                                    placeholder="seller@example.com">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label fw-bold">Phone / WhatsApp</label>
+                                                <input type="text" class="form-control acc-input" placeholder="+880...">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Right -->
+                                <div class="col-lg-4">
+                                    <!-- Publish card -->
+                                    <div class="acc-card mb-3" style="border-radius:16px;">
+                                        <div class="p-3"
+                                            style="background:#fbfcff;border-bottom:1px solid rgba(15,23,42,.08);">
+                                            <div class="fw-bold"><i class="fa-solid fa-bolt me-2"></i>Publish</div>
+                                            <div class="acc-muted">You can publish or save as draft</div>
+                                        </div>
+                                        <div class="p-3">
+                                            <div class="d-grid gap-2">
+                                                <button type="button" class="btn btn-primary fw-bold"
+                                                    style="border-radius:999px;">
+                                                    <i class="fa-solid fa-cloud-arrow-up me-2"></i> Publish Ship
+                                                </button>
+                                                <button type="button" class="btn btn-outline-primary fw-bold"
+                                                    style="border-radius:999px;">
+                                                    <i class="fa-regular fa-floppy-disk me-2"></i> Save Draft
+                                                </button>
+                                            </div>
+                                            <div class="acc-muted mt-3">
+                                                <i class="fa-solid fa-lock me-2"></i> All seller data is private.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Upload -->
+                                    <div class="form-section upload-box">
+                                        <div class="form-section-title">
+                                            <i class="fa-solid fa-images"></i> Ship Photos
+                                        </div>
+
+                                        <div class="row g-2">
+                                            <div class="col-12">
+                                                <label class="form-label fw-bold">Main Image</label>
+                                                <input class="form-control acc-input" type="file" accept="image/*">
+                                            </div>
+
+                                            <div class="col-12">
+                                                <label class="form-label fw-bold">Gallery Images (up to 6)</label>
+                                                <input class="form-control acc-input" type="file" accept="image/*"
+                                                    multiple>
+                                            </div>
+
+                                            <!-- Static preview placeholders -->
+                                            <div class="col-6">
+                                                <div class="upload-item">
+                                                    <div class="upload-thumb"><i class="fa-regular fa-image me-2"></i>
+                                                        Preview</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="upload-item">
+                                                    <div class="upload-thumb"><i class="fa-regular fa-image me-2"></i>
+                                                        Preview</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <div class="acc-muted">
+                                                    Tip: Use clear deck & profile shots for better inquiries.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- Bottom actions -->
+                            <div class="d-flex flex-wrap gap-2 justify-content-end mt-3">
+                                <a href="seller-ships.html" class="btn btn-outline-secondary fw-bold px-4"
+                                    style="border-radius:999px;">
+                                    Cancel
+                                </a>
+                                <button type="button" class="btn btn-primary fw-bold px-4" style="border-radius:999px;">
+                                    <i class="fa-solid fa-cloud-arrow-up me-2"></i> Publish
+                                </button>
+                            </div>
+                        </form>
+
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- ================= Footer ================= -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row g-4 footer-top">
+
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="footer-brand">JICOM</h4>
+                    <p class="footer-text">
+                        JICOM is a trusted global ship brokerage connecting buyers and sellers worldwide with verified
+                        vessels,
+                        transparent processes, and professional advisory support.
+                    </p>
+
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="ships.html">Ships</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Our Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Newbuild Ships</a></li>
+                        <li><a href="services.html">On-Service Ships</a></li>
+                        <li><a href="services.html">Ship Sale & Purchase</a></li>
+                        <li><a href="services.html">Market Advisory</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Contact</h5>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-envelope"></i> info@jicomglobal.com</li>
+                        <li><i class="fas fa-phone"></i> +123 456 7890</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Global Port City</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 <strong>JICOM</strong>. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
