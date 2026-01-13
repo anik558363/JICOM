@@ -5,7 +5,7 @@
   /* Colors */
   --c-dark: #183E26;
   /* deep green (dark areas/footer) */
-  --c-nav: #001428cc;
+  --c-nav: #04415F;
   /* navbar bg (চাইলে রেখে দাও) */
 
   --c-brand: #2D6A44;
@@ -124,6 +124,12 @@ a {
 /* =========================
    NAVBAR
 ========================= */
+
+.navbar-brand img{
+  width: 90px;
+  height: auto;
+}
+
 .custom-navbar {
   background: var(--c-nav);
   backdrop-filter: blur(10px);
