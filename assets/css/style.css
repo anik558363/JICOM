@@ -5,7 +5,7 @@
   /* Colors */
   --c-dark: #183E26;
   /* deep green (dark areas/footer) */
-  --c-nav: #04415F;
+  --c-nav: #fff;
   /* navbar bg (চাইলে রেখে দাও) */
 
   --c-brand: #2D6A44;
@@ -128,17 +128,19 @@ a {
 .navbar-brand img{
   width: 90px;
   height: auto;
+  object-fit: contain;
 }
 
 .custom-navbar {
   background: var(--c-nav);
   backdrop-filter: blur(10px);
   border-bottom: var(--nav-border);
+  box-shadow: var(--shadow-soft);
   transition: .3s;
 }
 
 .custom-navbar .nav-link {
-  color: var(--c-white);
+  color: var(--c-text);
   font-weight: 500;
   opacity: .9;
 }
@@ -156,13 +158,13 @@ a {
 .btn-cta {
   background: rgba(79, 195, 247, .12);
   border: 1px solid rgba(79, 195, 247, .35);
-  color: var(--c-white);
+  color: var(--c-text);
 }
 
 .btn-cta:hover {
   background: rgba(79, 195, 247, .22);
   border-color: rgba(79, 195, 247, .55);
-  color: var(--c-white);
+  color: var(--c-text);
 }
 
 /* =========================
